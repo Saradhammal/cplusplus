@@ -1,0 +1,81 @@
+/* 
+WEATHER APP
+
+NAME : SARADHAMMAL S 
+COLLEGE NAME : VIVEKANANDHA COLLEGE OF ENGINEERING FOR WOMEN
+
+METHODS USED:
+CONDITIONAL STATEMENTS
+   ->if statement
+   ->else statement 
+   ->else if statement
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    string emailid;
+    string location;
+    int report;
+    int temperature;
+    string climate;
+    
+    // get the mail id from users
+    
+    cout<<"WEATHER APP"<<endl;
+    cout<<"!!welcome to weather app!!"<<endl;
+    cout<<"enter the maid id: "<<endl;
+    cin>>emailid;
+    
+    //get location from users
+    
+    cout<<"enter your current location :"<<endl;
+    cin>> location;
+    
+    //select the type of weather report 
+    
+    cout<<"which type of weather would you like to know ?"<<endl;
+    cout<<"1.TODAY REPORT \n";
+    cout<<"2.TOMORROW REPORT\n";
+    cout<<"3.YESTERDAY REPORT \n";
+    cout<<"4.WEEKLY REPORT \n";
+    cout<<"\n enter any number from (1,2,3,4):";
+    cin>>report;
+    
+    // weather condition
+    
+    if(report == 1)
+    {
+        climate ="sunny";
+        temperature =30;
+    }
+     else if(report == 2)
+    {
+        climate ="rainy";
+        temperature =18;
+    }
+     else if(report == 3)
+     {
+        climate ="windy";
+        temperature =20;
+    }
+     else if(report == 4)
+     {
+        climate ="thunderstorm";
+        temperature =15;
+    }
+    
+    else 
+    {
+        cout<<" invalid option..select valid option:"<<endl;
+    }
+    
+    // the weather report
+    cout<<" Report about the weather condition : "<<climate<<endl;
+    cout<<" \n Temperature in your location :"<<temperature<<endl;
+    cout<<"\n !! Thank you for using weather app !!";
+    return 0;
+    
+}
